@@ -10,5 +10,5 @@ This project is the solution implemented for the `Devsu's QA practical exercises
 
 ### Prerequisites
 
-- node LTS
+- Node.js 18.x, 20.x, 22.x and above
 - npm LTS
