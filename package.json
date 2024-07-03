@@ -1,0 +1,29 @@
+{
+  "name": "devsu-qa-e2e-api",
+  "version": "1.0.0",
+  "description": "Solution implemented for the two Devsu's practical exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielhndz/Devsu-qa-e2e-api.git"
+  },
+  "keywords": [
+    "cypress",
+    "guerkin",
+    "cucumber",
+    "automation-ui",
+    "automation-api"
+  ],
+  "author": "Daniel Hernández",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/danielhndz/Devsu-qa-e2e-api/issues"
+  },
+  "homepage": "https://github.com/danielhndz/Devsu-qa-e2e-api#readme",
+  "devDependencies": {
+    "cypress": "^13.13.0"
+  }
+}
