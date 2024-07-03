@@ -4,7 +4,7 @@
 
 <br/>
 
-This project is the solution implemented for the `Devsu's practical exercises`.
+This project is the solution implemented for the `Devsu's QA practical exercises`.
 
 ## Getting Started
 
