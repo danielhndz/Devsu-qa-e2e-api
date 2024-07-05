@@ -54,7 +54,7 @@ Then select the e2e feature file:
 
 ![selecting e2e feature file and running scenario](../media/e2e_demo.gif?raw=true)
 
-## Final thoughts
+## Final findings and thoughts
 
 - Cypress can successfully automates e2e flows for e-commerce sites such as saucedemo.com, I find it seems to produce flake-resistant tests as opposed to Selenium.
 - Cypress ca be easily integrated with plugins, allowing Cucumber and POM for instance, to be implemented on a Cypress-based framework.
