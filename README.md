@@ -54,6 +54,12 @@ Then select the e2e feature file:
 
 ![selecting e2e feature file and running scenario](../media/e2e_demo.gif?raw=true)
 
+## Final thoughts
+
+- Cypress can successfully automates e2e flows for e-commerce sites such as saucedemo.com, I find it seems to produce flake-resistant tests as opposed to Selenium.
+- Cypress ca be easily integrated with plugins, allowing Cucumber and POM for instance, to be implemented on a Cypress-based framework.
+- I found an interesting and valuable opinion by [Filip Hric](https://filiphric.com/cucumber-in-cypress-a-step-by-step-guide), he says that keeping in mind that Cypress tests are executed inside the browser, the use of Cucumber (whose benefits are well known and so well appreciated from my point of view) implies using a black-box approach that "throws away all the power of Cypress", I agree with him, but I also think that the benefits that come with Cucumber are important and valuable enough to keep it, he also "still" believes that we can be successful even with this abstraction model.
+
 ## Built With
 
 - [Cypress](https://www.cypress.io/) - JavaScript testing framework
