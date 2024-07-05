@@ -52,7 +52,7 @@ Then select the browser and click on `Start E2E Testing in <browser>`:
 
 Then select the e2e feature file:
 
-![demo gif: selecting e2e feature file and running scenario](../media/e2e_demo.gif?raw=true)
+![selecting e2e feature file and running scenario](../media/e2e_demo.gif?raw=true)
 
 ## Built With
 
