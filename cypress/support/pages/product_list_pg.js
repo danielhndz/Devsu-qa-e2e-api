@@ -66,7 +66,6 @@ export class ProductListPage {
         break;
       }
     } while (true);
-    cy.log(randomList);
     for (let i = 0; i < randomList.length; i++) {
       if (i == 0) {
         cy.get(elements.btnRemove).should("not.exist");
