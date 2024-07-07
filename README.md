@@ -29,7 +29,7 @@ git clone git@github.com:danielhndz/devsu-qa-e2e-api.git
 Then, you need to go to the project folder:
 
 ```bash
-cd Devsu-qa-e2e-api
+cd devsu-qa-e2e-api
 ```
 
 Then, you need to install the dependencies, if you haven't already done so:
