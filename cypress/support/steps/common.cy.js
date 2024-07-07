@@ -1,5 +1,3 @@
-let carSize;
-
 export function getCarSize() {
   return Cypress.env("carSize");
 }

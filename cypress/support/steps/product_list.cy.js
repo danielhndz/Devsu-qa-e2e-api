@@ -1,5 +1,5 @@
 import { When } from "@badeball/cypress-cucumber-preprocessor";
-import { ProductListPage } from "../pages/product_list_pg";
+import { ProductListPage } from "../pages/product_list.cy";
 
 const productListPage = new ProductListPage();
 

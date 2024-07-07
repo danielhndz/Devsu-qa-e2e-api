@@ -1,4 +1,4 @@
-import { getRandomIntBetween1AndN, setCarSize } from "../steps/common_steps";
+import { getRandomIntBetween1AndN, setCarSize } from "../steps/common.cy";
 
 const elements = {
   itemName: "*[data-test='inventory-item-name']",

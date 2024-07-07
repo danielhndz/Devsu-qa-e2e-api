@@ -1,6 +1,6 @@
 import data from "../../fixtures/data.json";
-import { getCarSize } from "../steps/common_steps";
-import { ProductListPage } from "./product_list_pg";
+import { getCarSize } from "../steps/common.cy";
+import { ProductListPage } from "./product_list.cy";
 
 const elements = {
   btnGoToCart: "*[data-test='shopping-cart-link']",
