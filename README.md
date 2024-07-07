@@ -23,7 +23,7 @@ This project is the solution implemented for the `Devsu's QA practical exercises
 First, you need to clone this repo:
 
 ```bash
-git clone git@github.com:danielhndz/Devsu-qa-e2e-api.git
+git clone git@github.com:danielhndz/devsu-qa-e2e-api.git
 ```
 
 Then, you need to go to the project folder:
