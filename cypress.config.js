@@ -1,3 +1,4 @@
+const { allureCypress } = require("allure-cypress/reporter");
 const {
   addCucumberPreprocessorPlugin,
 } = require("@badeball/cypress-cucumber-preprocessor");
@@ -15,6 +16,9 @@ async function setupNodeEvents(on, config) {
       plugins: [createEsbuildPlugin(config)],
     })
   );
+  allureCypress(on, {
+    resultsDir: "./allure-results",
+  });
   // Make sure to return the config object as it might have been modified by the plugin.
   return config;
 }
@@ -23,8 +27,12 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: "https://www.saucedemo.com/",
     specPattern: "**/features/*.feature",
-    setupNodeEvents: setupNodeEvents,
     chromeWebSecurity: false,
     carSize: 0,
+    env: {
+      allure: true,
+      allureReuseAfterSpec: true,
+    },
+    setupNodeEvents,
   },
 });

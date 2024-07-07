@@ -15,6 +15,8 @@ This project is the solution implemented for the `Devsu's QA practical exercises
 - [Cypress](https://www.cypress.io/) `npm i -D cypress`
 - [cypress-esbuild-preprocessor](https://github.com/bahmutov/cypress-esbuild-preprocessor) `npm i -D @bahmutov/cypress-esbuild-preprocessor esbuild`
 - [cypress-cucumber-preprocessor](https://github.com/badeball/cypress-cucumber-preprocessor) `npm i -D @badeball/cypress-cucumber-preprocessor`
+- [Allure](https://allurereport.org/docs/install/)
+- [allure-cypress](https://allurereport.org/docs/cypress/) `npm i -D allure-cypress`
 
 ### Run
 
@@ -30,7 +32,13 @@ Then, you need to go to the project folder:
 cd Devsu-qa-e2e-api
 ```
 
-Then, you can run it with the Cypress GUI:
+Then, you need to install the dependencies, if you haven't already done so:
+
+```bash
+npm i -D
+```
+
+Then, you can run it with the Cypress GUI (the Allure reports will not be generated):
 
 ```bash
 # both have the same result
@@ -68,6 +76,34 @@ Then select the api feature file:
 
 ![selecting api feature file and running scenario](../media/api_demo.gif?raw=true)
 
+### Report
+
+You must already have Allure installed to generate the testing report:
+
+```bash
+# both have the same result
+npx cypress run
+npm run cy:run
+```
+
+![running finished](../media/run_output.png?raw=true)
+
+Then, you can generate Allure reports based on the `allure-results` folder generated in the previous step:
+
+```bash
+allure generate
+```
+
+![allure generate](../media/allure_generate.png?raw=true)
+
+Then, you can open the reports generated on the `allure-report` folder in the previous step:
+
+```bash
+allure open
+```
+
+![allure open](../media/allure_open.png?raw=true)
+
 ## Final findings and thoughts
 
 - Cypress can successfully automate E2E and API test flows for e-commerce sites such as saucedemo.com and petstore.swagger.io, I find it seems to produce flake-resistant tests as opposed to Selenium.
@@ -81,6 +117,8 @@ Then select the api feature file:
 - [Cypress](https://www.cypress.io/) - JavaScript testing framework
 - [cypress-esbuild-preprocessor](https://github.com/bahmutov/cypress-esbuild-preprocessor) (plugin) - Bundle Cypress specs using esbuild
 - [cypress-cucumber-preprocessor](https://github.com/badeball/cypress-cucumber-preprocessor) (plugin) - This preprocessor aims to provide a developer experience and behavior similar to that of Cucumber, to Cypress.
+- [Allure](https://allurereport.org/) - Simple. Fun. Language and Framework agnostic.
+- [allure-cypress](https://allurereport.org/docs/cypress/) - Generate beautiful HTML reports using Allure Report and your Cypress tests.
 - [Git](https://git-scm.com/) - Version Management
 
 ## Authors
